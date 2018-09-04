@@ -1,0 +1,36 @@
+body{
+	font-family: Verdana;
+	background-color: #373f42;
+	margin-top:150px;
+}
+.entrada{
+	max-width: 350px;
+	height: 150px;
+	background-color: white; 
+	margin:auto;
+	box-sizing: border-box;
+	margin-top: 5px;
+	border-radius: 7px;
+}
+
+.img{
+	float:left;
+}
+.titulo{
+	float: left;
+	font-size: 10px;
+	margin-top: 1px;
+	margin-left: 40px
+}
+.numplaca{
+	float: left;
+	font-size: 10px;
+}
+.entradas{
+	float:right;
+	width:200px; 
+}
+.titulo{
+	margin-right: 80px;
+}
+

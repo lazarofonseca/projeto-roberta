@@ -1,36 +1,87 @@
-body{
+*{
 	font-family: Verdana;
-	background-color: #373f42;
-	margin-top:150px;
-}
-.entrada{
-	max-width: 350px;
-	height: 150px;
-	background-color: white; 
-	margin:auto;
-	box-sizing: border-box;
-	margin-top: 5px;
-	border-radius: 7px;
+	font-size: 17px;
+} 
+body {
+	margin:0;
+	padding:0;
+	margin-top: 0;
+	background-color:#353535;
 }
 
-.img{
+footer {
+	height:50px;
+	width: 1000px
+	line-height:50px;
+	font-size:15px;
+	color:white;
+}
+.topo{
+	height:50px;
+	background-color:#353535;
+}
+.topoint{
+	width: 1000px;
+	margin:auto;
+	color:#FFFFFF;
+}
+.nomeestacionamento{
+	float:left;
+	font-size:15px;
+	line-height: 50px; 
+}
+.regentsaida{
+	line-height: 50px;
+	cursor:pointer;
+	float:right;
+	}
+.area{
+	height: 300px
+	background-color:#347aba;
+}
+.areaint{
+	width: 1000px;
+	margin:auto;
+	background-color:#373f42;
+}
+.imglogo{
+	width: 200px;
+}
+.areamenu {
+	background-color:#373f42;
+	max-width: 200px;
+	height:400px;
 	float:left;
 }
-.titulo{
-	float: left;
-	font-size: 10px;
-	margin-top: 1px;
-	margin-left: 40px
+.menu ul,.menu li {
+	margin:0;
+	padding:0; 
+	list-style: none;
+	padding-left: 10px;
+	padding-right: 0px;
+	cursor:pointer;
+	color:white;
 }
-.numplaca{
-	float: left;
-	font-size: 10px;
+.menu li:hover{
+	background-color: #ffe200;
 }
-.entradas{
+.corpo{
+	background-color: white;
+	width:800px;
 	float:right;
-	width:200px; 
 }
-.titulo{
-	margin-right: 80px;
+.img-int{
+	float:left;
 }
-
+.corpoint{
+	max-width:800px;
+	height:50px; 
+	line-height:50px;
+	margin:auto;
+}
+.textcorpoint{
+	float: left;
+}
+.entrada{
+	margin-left:10px;
+}

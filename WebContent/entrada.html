@@ -1,0 +1,80 @@
+<html>
+	<head>
+		<title> Pagina Principal</title>
+		<meta charset="utf-8">
+		<link href="style.css" rel="stylesheet" />
+	</head>
+	<body>
+		<div class="topo">
+			<div class="topoint">
+				<div class="nomeestacionamento">
+					Estacionamento: CEst
+				</div>
+				<div class="regentsaida">
+					Registrar Entrada/Saida
+				</div>
+			</div>
+		</div>
+		<div class="area">
+			<div class="areaint">
+				<div class="areamenu">
+					<div class="imglogo">
+					<img src="logo.png">
+					</div>
+					<div class="menu">
+						<ul>
+    					<li><img src="iconhome.png"><a href="home.html">Inicial</a></li>
+						<li><img src="icon_entradas.png"> <a href="entrada.html">Entradas/Saidas</a></li>
+    					<li><img src="icon_clientes.png"> Clientes</li>
+        				<li><img src="icon_caixa.png"> Caixa</li>
+        				<li><img src="icon_relatorio.png"> Relatórios</li>
+        				<li><img src="icon_config.png"> Configurações</li>
+        				<li><img src="icon_sair.png"> Sair</li>
+						</ul>
+							</div>
+							</div>
+
+				<div class="corpo">
+					<div class="corpoint">
+						<div class="img-int">
+							<img src="icon-seta.png">
+						</div>
+						<div class="textcorpoint">
+							<b>REGISTRAR ENTRADAS E SAIDAS</b>
+						</div>
+					</div>
+					<div class="entrada">
+
+
+					<div class="entrada veiculo">
+					<h3>Entrada do Veiculo</h3>
+					</div>
+
+					<form action="ticket" method="post">
+					Digite a placa do veículo: <input type="text" name="placa">
+
+					<input type="submit" value="Gerar recibo de entrada " ><br/>
+				</form>
+				<div class="saida veiculo">
+					<h3>Saída do Veiculo</h3>
+					</div>
+
+					<div class="saida">
+						<form action="saida" method="post">
+						<div class="numplaca">
+							Digite o código de entrada:<br/> <input type="text" name="id_veiculo"><br/>
+							Digite a placa:</div>
+
+							<input type="text" name="placa" maxlength="7" >
+							<div class="botao">
+
+							<input type="submit" value="Gerar recibo de Saída" >
+						</form>
+						</div>
+						</div>
+					</div>
+
+
+			<footer>Desenvolvido por: Ademar,Daniel,Lazaro e Martinho. <b>Professora: Roberta Guedes.</b></footer>
+	</body>
+	</html>

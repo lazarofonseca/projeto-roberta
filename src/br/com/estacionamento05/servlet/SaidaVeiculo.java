@@ -51,8 +51,8 @@ public class SaidaVeiculo extends HttpServlet {
 		//Definir a o Locale
 		
 		DecimalFormatSymbols dfs = new DecimalFormatSymbols();
-		dfs.setDecimalSeparator(',');
-		DecimalFormat df = new DecimalFormat("00,00", dfs);
+		dfs.setDecimalSeparator('.');
+		DecimalFormat df = new DecimalFormat("00.00", dfs);
 		
 		
 		// data/hora atual
@@ -79,7 +79,7 @@ public class SaidaVeiculo extends HttpServlet {
 		
 		
 		if(tempo > 4) {
-			valorPagar = valorPagar + ((tempo - 4)*2);
+			valorPagar = valorPagar + ((tempo - 4)*2.00);
 		}else {
 			valorPagar = VALOR;
 		}

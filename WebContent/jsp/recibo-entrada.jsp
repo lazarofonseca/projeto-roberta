@@ -8,8 +8,11 @@
 </head>
 <body>
 
-	<form action="teste" method="post">
+	<form action="home.html">
+	
+	<h3>Número de vagas disponíveis value="${nVaga}"<h3>
 		<table width="300" cellpadding="10" align="center">
+			
 			<tr>
 				<td>Id:</td>
 				<td><input type="text" name="id_veiculo" disabled="disabled" value="${id_veiculo}"/></td>
@@ -29,7 +32,7 @@
 			</tr>
 			<tr>
 				<td>
-					<input type="submit" value="Efetuar Download">
+					<input type="submit" value="Efetuar Download e voltar para home">
 				</td>
 			</tr>
 			

@@ -21,27 +21,27 @@
 			</tr>
 			<tr>
 				<td>Data de Entrada:</td>
-				<td><input type="text" name="dataSaida" value="${dataSaida}"/></td>
+				<td><input type="text" name="dataSaida" disabled="disabled" value="${dataSaida}"/></td>
 			</tr>
 			<tr>
 				<td>Hora da Entrada:</td>
-				<td><input type="text" name="horaSaida"  value="${horaSaida}"/></td>
+				<td><input type="text" name="horaSaida" disabled="disabled" value="${horaSaida}"/></td>
 			</tr>
 			<tr>
 				<td>Tempo Total:</td>
-				<td><input type="text" name="Tempo"  value="${tempo}"/></td>
+				<td><input type="text" name="tempo" disabled="disabled" value="${tempo}"/></td>
 			</tr>
 			<tr>
-				<td>Valor a Pagar:</td>
-				<td><input type="text" name="valorPagar"  value="${valor}"/></td>
+				<td>Valor a Pagar R$:</td>
+				<td><input type="text" name="valorApagar" disabled="disabled" value="${valorApagar}"/></td>
 			</tr>
 			<tr>
-				<td>Valor Pago:</td>
-				<td><input type="text" name="valorPago"  /></td>
+				<td>Valor Pago R$:</td>
+				<td><input type="text" name="valorPago" disabled="disabled" value="${valorPago}" /></td>
 			</tr>
 			<tr>
-				<td>Troco:</td>
-				<td><input type="text" name="troco" value="${troco}"/></td>
+				<td>Troco R$:</td>
+				<td><input type="text" name="troco" disabled="disabled" value="${troco}"/></td>
 			</tr>
 			
 			<tr>

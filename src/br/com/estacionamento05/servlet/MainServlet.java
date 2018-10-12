@@ -16,6 +16,7 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.swing.JOptionPane;
 
 import br.com.estacionamento05.DAO.VeiculoDAO;
 import br.com.estacionamento05.DTO.VeiculoDTO;
@@ -26,8 +27,8 @@ import jdk.nashorn.internal.ir.RuntimeNode.Request;
 public class MainServlet extends HttpServlet{
 	
 	
-	private final int VAGAS = 3;
 	
+	private int vagas = 3;
 	
 	/**
 	 * 
@@ -38,7 +39,7 @@ public class MainServlet extends HttpServlet{
 	protected void service(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 		
 		PrintWriter out = resp.getWriter();
-		int cont = 0;
+		
 		String placa = req.getParameter("placa");
 		
 		// data/hora atual
@@ -52,6 +53,12 @@ public class MainServlet extends HttpServlet{
 		DateTimeFormatter formatterHora = DateTimeFormatter.ofPattern("HH:mm:ss");
 		String horaFormatada = formatterHora.format(agora);
 		
+		if(vagas == 0) { // Verifica se a vagas
+			JOptionPane.showMessageDialog(null, "Não a vagas disponíveis");
+			RequestDispatcher dispachar = req.getRequestDispatcher("home.html");
+			dispachar.forward(req, resp);
+		
+		}
 		
 		VeiculoDTO veiculo = new VeiculoDTO();
 		
@@ -59,11 +66,14 @@ public class MainServlet extends HttpServlet{
 		
 		VeiculoDAO dao = new VeiculoDAO(veiculo);
 		dao.adiciona(veiculo);
+		vagas --;
+		String nVaga = Integer.toString(vagas);
 		String id = Integer.toString(dao.retornaId());
 		
 		req.setAttribute("id_veiculo", id);
 		req.setAttribute("dataEntrada", dataFormatada);
 		req.setAttribute("horaEntrada", horaFormatada);
+		req.setAttribute("nVaga", nVaga);
 		
 		RequestDispatcher dispachar = req.getRequestDispatcher("/jsp/recibo-entrada.jsp");
 		dispachar.forward(req, resp);

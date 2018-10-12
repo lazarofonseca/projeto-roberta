@@ -8,20 +8,20 @@
 </head>
 <body>
 
-	<form action="teste" method="post">
+	<form action="calculatroco" method="post">
 		<table width="300" cellpadding="10" align="center">
 			<tr>
 				<td>Id:</td>
-				<td><input type="text" name="id_veiculo" disabled="disabled" value="${id_veiculo}"/></td>
+				<td><input type="text" name="id_veiculo"  value="${id_veiculo}"/></td>
 			</tr>
 			
 			<tr>
 				<td>Placa:</td>
-				<td><input type="text" name="placa" disabled="disabled" value="${placa}"/></td>
+				<td><input type="text" name="placa"  value="${placa}"/></td>
 			</tr>
 			<tr>
 				<td>Data de Entrada:</td>
-				<td><input type="text" name="dataSaida" value="${dataSaida}"/></td>
+				<td><input type="text" name="dataSaida"  value="${dataSaida}"/></td>
 			</tr>
 			<tr>
 				<td>Hora da Entrada:</td>
@@ -29,24 +29,24 @@
 			</tr>
 			<tr>
 				<td>Tempo Total:</td>
-				<td><input type="text" name="Tempo"  value="${tempo}"/></td>
+				<td><input type="text" name="tempo"  value="${tempo}"/></td>
 			</tr>
 			<tr>
-				<td>Valor a Pagar:</td>
+				<td>Valor a Pagar R$:</td>
 				<td><input type="text" name="valorPagar"  value="${valor}"/></td>
 			</tr>
 			<tr>
-				<td>Valor Pago:</td>
+				<td>Valor Pago R$:</td>
 				<td><input type="text" name="valorPago"  /></td>
 			</tr>
 			<tr>
-				<td>Troco:</td>
-				<td><input type="text" name="troco" value="${troco}"/></td>
+				<td>Troco R$:</td>
+				<td><input type="text" name="troco"  value="${troco}"/></td>
 			</tr>
 			
 			<tr>
 				<td>
-					<input type="submit" value="Efetuar Download">
+					<input type="submit" value="Efetuar Pagamento">
 				</td>
 			</tr>
 			
